@@ -1,0 +1,12 @@
+-- 카테고리 데이터
+INSERT INTO categories (id, name) VALUES (1, '과일');
+
+-- 단어 데이터
+INSERT INTO words (id, content, category_id) VALUES
+(1, 'apple', 1),
+(2, 'banana', 1);
+
+-- 퀴즈 데이터
+INSERT INTO quizzes (id, word_id, question, correct_answer, option1, option2, option3, difficulty) VALUES
+(1, 1, 'What is this?', '사과', '배', '감', '귤', 'BEGINNER'),
+(2, 2, 'What is this?', '바나나', '딸기', '포도', '메론', 'BEGINNER');
